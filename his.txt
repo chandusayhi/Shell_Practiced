@@ -1,0 +1,51 @@
+1:sed '$d;($-1)d' file5
+2:sed '$d;4d' file5
+4:sed '2p' file5
+5:sed -n '2p' file5
+6:sed -n '2p;5p' file5
+7:sed -n '2p,5p' file5
+8:sed -n '2,5p' file5
+9:sed -n '$p' file5
+157:sed -i '/Mar/d' file4
+159:sed 's/Feb//g' file4
+160:sed 's/27//g' file4
+161:sed '/feb/d' file4
+162:sed '/Feb/d' file4
+165:sed -n '2p' file4
+166:sed -n 2,5p fil4
+167:sed -n 2,5p file4
+168:sed -n 2p;5p file4
+170:sed -n '2p;5p' file4
+171:sed -n 1p file4
+172:sed -n '2,4p' file4
+173:sed -n '4p;5p' file4
+174:sed 2d file4
+175:sed '2d' file4
+176:sed 1d file4
+177:sed 2d file4
+178:sed 4d file4
+179:sed '2,5d' file4
+180:sed '3,5d' file4
+770:df -h . | awk -F " " 'NR==2 {print $5}' | sed 's/%//g'
+2125:vi seddemo
+2126:sed 's/is/where/' seddemo 
+2127:sed 's/is/where/g' seddemo 
+2128:sed '2s/this/that/1g' seddemo 
+2129:sed '2s/this/that/1' seddemo 
+2130:sed '2s/this/that/' seddemo 
+2131:sed '1s/this/that/' seddemo 
+2132:sed '2s/this/that/' seddemo 
+2133:sed '2s/this/that/I' seddemo 
+2134:sed '1,2s/this/that/I' seddemo 
+2135:sed '1,3s/this/that/I' seddemo 
+2136:sed '1s;3s/this/that/I' seddemo 
+2137:sed '2d' seddemo 
+2138:sed '2,1d' seddemo 
+2139:sed '1,2d' seddemo 
+2140:sed '1d;3d' seddemo 
+2141:sed '$d' se
+2142:sed '$d' seddemo 
+2143:sed -n '$p' seddemo 
+2144:sed -n '1,2p' seddemo 
+2145:sed -n '1p;3p' seddemo 
+2160:df -h . | awk -F " " 'NR>1 {print $5}' | sed 's/%//g'
