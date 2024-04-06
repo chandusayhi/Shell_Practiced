@@ -1,3 +1,3 @@
 #!/bin/bash
-sum=`expr 10 + 20`
+sum=`expr $1 + $2`
 echo "The sum of two  numbers is $sum"
