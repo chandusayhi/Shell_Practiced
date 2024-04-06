@@ -6,3 +6,5 @@ echo "touch command is used to create the new files"
 echo "rm command is used to delete the files and directories"
 echo "New line"
 
+
+
